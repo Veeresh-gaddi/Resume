@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Veeresh Gaddi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <a href="resume.html" class="active">Resume</a>
+            <a href="biodata.html">Bio-Data</a>
+            <button id="printBtn">Print Resume</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Veeresh Gaddi</h1>
+            <p class="contact-info">
+                Machine Learning Developer | +919987774837 | veereshgaddi@gmail.com
+            </p>
+            <p><a href="https://linkedin.com/in/Veeresh-Gaddi" target="_blank">linkedin.com/in/Veeresh-Gaddi</a></p>
+        </header>
+
+        <hr>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Analytical and detail-oriented Machine Learning Developer with hands-on experience in Python, SQL, and Machine Learning. Proficient in extracting insights from large datasets, building predictive models, and creating interactive dashboards.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Data Analytics & Web Developer Intern</h3>
+                
+                <ul>
+                    <li>Built responsive web pages using HTML, CSS, JavaScript, and Bootstrap.</li>
+                    <li>Created interactive dashboards with Pandas and Matplotlib, speeding up decisions by 15%.</li>
+                    <li>Developed REST APIs and optimized SQL queries for efficient data retrieval.</li>
+                    <li>Increased website engagement by 30% and reduced bounce rate by 25% via A/B testing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects <button id="toggleProjects" class="small-btn">Hide Details</button></h2>
+            <div id="project-list">
+                <div class="project">
+                    <h3>Advanced Ecommerce Recommendation System</h3>
+                    <p><em>Python, NLP, BoW, TF-IDF, Word2Vec</em></p>
+                    <ul>
+                        <li>Engineered a content-based recommendation system with results within 100ms.</li>
+                        <li>Attained 98% accuracy using NLP Models (Bag of Words, TF-IDF).</li>
+                        <li>Supercharged recommendations for 1 million products.</li>
+                    </ul>
+                </div>
+                
+                <div class="project">
+                    <h3>Handwritten Digit Recognition</h3>
+                    <p><em>Python, ML, KNN, AI, Numpy, Tensorflow</em></p>
+                    <ul>
+                        <li>Achieved 95% classification accuracy on MNIST dataset using KNN.</li>
+                        <li>Reduced prediction latency by 25% through vectorized operations.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Air Quality Prediction</h3>
+                    <p><em>Python, ML, Pandas, Linear Regression</em></p>
+                    <ul>
+                        <li>Built regression-based pollution forecasting model for AQI trend analysis.</li>
+                        <li>Boosted performance to 98% using NLP techniques.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Python, Java, JavaScript, SQL, HTML, CSS, C++</li>
+                <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                <li><strong>Machine Learning:</strong> Regression, Classification, Cross-Validation</li>
+                <li><strong>Tools:</strong> Git, Docker, Jupyter, VS Code, AWS (S3, EC2)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Honors & Awards</h2>
+            <p>Solved 500+ algorithmic problems across LeetCode, CodeChef, HackerRank, and InterviewBit.</p>
+        </section>
+    </div>
+
+    <script>
+        // jQuery for Interactivity
+        $(document).ready(function(){
+            // Toggle Project Details
+            $("#toggleProjects").click(function(){
+                $("#project-list").slideToggle();
+                $(this).text($(this).text() == 'Hide Details' ? 'Show Details' : 'Hide Details');
+            });
+
+            // Print Functionality
+            $("#printBtn").click(function(){
+                window.print();
+            });
+        });
+    </script>
+</body>
+</html>

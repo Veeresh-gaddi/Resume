@@ -1,0 +1,149 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #34495e;
+}
+
+nav button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Typography */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h3 {
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+header a {
+    color: #2980b9;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Bio-Data Table */
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.biodata-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.biodata-table .label {
+    font-weight: bold;
+    width: 30%;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+.small-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.small-btn:hover {
+    background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+    nav a {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}
